@@ -29,6 +29,7 @@ $( document ).ready(function() {
 			else{
 				label.innerHTML = labelVal;
 				$("#selected-image").attr("src", '');
+				$("#selected-image").removeClass("col-12");
 				$("#arrow-right").addClass("fa-arrow-right");
 				$("#arrow-right").removeClass("fa-check");
 				$("#arrow-right").removeClass("fa-spinner fa-spin");
@@ -43,7 +44,9 @@ $( document ).ready(function() {
 		input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
 		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
 	});
+});
 
+$("#startLink").click(function () {
 	var img = document.getElementById('selected-image');
 	startRecognize(img);
 });

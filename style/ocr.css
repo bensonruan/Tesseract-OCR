@@ -127,3 +127,16 @@ select {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
  }
+
+ #startLink{
+   text-decoration: underline;
+   margin-top: 100px;
+ }
+
+ @media screen and (min-width: 992px) {
+  #startPre{
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+  }
+}
