@@ -86,7 +86,7 @@ function progressUpdate(packet){
 		if(packet.status == 'done'){
 			log.innerHTML = ''
 			var pre = document.createElement('pre')
-			pre.appendChild(document.createTextNode(packet.data.text))
+			pre.appendChild(document.createTextNode(packet.data.text.replace(/\n\s*\n/g, '\n')))
 			line.innerHTML = ''
 			line.appendChild(pre)
 			$(".fas").removeClass('fa-spinner fa-spin')
